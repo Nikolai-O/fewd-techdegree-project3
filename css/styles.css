@@ -1,0 +1,211 @@
+/* === BASE ELEMENT STYLES === */
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    border-top: 2px solid black;
+    padding: 0;
+}
+
+fieldset:nth-child(2) {
+    margin-top: 20px;
+}
+
+p {
+    color: grey;
+}
+
+footer {
+    display: flex;
+    justify-content : center;
+    font-style: italic;
+    padding: 20px 0;
+    background-color: #ffcccc;
+}
+
+/* === STYLES === */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    margin-top: 0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    border-bottom: 4px solid black;
+    margin-bottom: 3px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+}
+
+.banner p {
+    margin-top: 0;
+}
+
+.form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.form h2 {
+    margin-top: 24px;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.label,
+.zipcode {
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+    margin: 10px 0;
+}
+
+.box {
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(240, 240, 240);
+    margin-bottom: 5px;
+    height: 3.5rem;
+    font-size: 1.5em;
+    padding: 0 20px;
+}
+
+.box::placeholder {
+    color: lightgrey;
+    font-size: 0.8em;
+    text-align: right;
+    font-style: italic;
+    position: relative;
+}
+
+option {
+    color: lightgrey;
+}
+
+.box:focus,
+.box:focus::placeholder,
+.textarea:focus {
+    background-color: #ffcccc;
+    color: white;
+}
+
+.zip {
+    max-width: 50%;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox,
+.radio {
+    margin: 8px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 15px;
+}
+
+.checkbox-js,
+.radio-text,
+.newsletter:last-child {
+    margin-bottom: 16px;
+}
+
+.label-topics {
+    padding-bottom: 8px;
+}
+
+.textarea {
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(240, 240, 240);
+    height: 100px;
+    font-size: 1.5em;
+}
+
+.button {
+    color: white;
+    background-color: rgb(0, 200, 185);
+    border: none;
+    border-radius: 8px;
+    height: 3.5rem;
+    font-size: 1.4em;
+    margin: 15px 0 25px 0;
+}
+
+.copy {
+    color: white;
+    font-size: .75em;
+}
+
+/* === MEDIA QUERIES === */
+
+@media (min-width: 768px) {
+
+    .banner,
+    .form {
+        width: 60%;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    .box {
+        width: 70%;
+    }
+
+    .flexbox label {
+        width: 30%;
+    }
+
+    .zip {
+        max-width: none;
+    }
+}
