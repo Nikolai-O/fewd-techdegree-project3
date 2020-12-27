@@ -1,5 +1,9 @@
 /* === BASE ELEMENT STYLES === */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Merriweather', serif;
@@ -107,16 +111,14 @@ footer {
     padding: 0 20px;
 }
 
-.box::placeholder {
+.box::placeholder,
+select {
     color: lightgrey;
     font-size: 0.8em;
     text-align: right;
     font-style: italic;
     position: relative;
-}
-
-option {
-    color: lightgrey;
+    padding-right: 10px;
 }
 
 .box:focus,
@@ -191,6 +193,10 @@ input[type="radio"] {
         margin-bottom: 25px;
     }
 
+    .form h2 {
+        margin-top: 36px;
+    }
+
     .flexbox {
         display: flex;
         flex-direction: row;
@@ -206,6 +212,6 @@ input[type="radio"] {
     }
 
     .zip {
-        max-width: none;
+        max-width: 30%;
     }
 }

@@ -19,7 +19,7 @@
     <main class="container">
         <form class="form">
             <fieldset>
-                <h2>Contact Information</h2>
+                <legend><h2>Contact Information</h2></legend>
                 <div class="fields">
                     <div class="flexbox"> 
                         <label for="name" class="label">Full Name</label>
@@ -50,6 +50,7 @@
                         <label for="state" class="label">State</label>
                         <select id="state" name='user_state' class="box">
                             <optgroup label="State" class="state">
+                                <option value="" disabled selected hidden><span class="state-select">Choose State</span></option>
                                 <option value="AK">Alaska</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AR">Arkansas</option>
@@ -114,7 +115,7 @@
             </fieldset>
             
             <fieldset>
-                <h2>Newsletter</h2>
+                <legend><h2>Newsletter</h2></legend>
                 <div class="newsletter">
                     <label class="label">Select the newsletters you would like to receive</label>
                     <div class="checkbox"><input type="checkbox" id="HTML" value="newsletter_html" name="user_newsletter"><label class="label" for="HTML">HTML News</label></div>
