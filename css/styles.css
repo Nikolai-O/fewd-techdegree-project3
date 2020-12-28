@@ -126,6 +126,7 @@ select {
 .textarea:focus {
     background-color: #ffcccc;
     color: white;
+    transition: all 0.8s;
 }
 
 .zip {
